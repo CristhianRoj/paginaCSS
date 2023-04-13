@@ -1,0 +1,167 @@
+body{
+    font-family: monospace;
+    border: 0;
+    background-color: black;
+    color: white; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0; 
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 110%;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0; 
+    padding: 0 5%;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+nav li{
+    margin: 0 10px; 
+    font-size: 90%;
+}
+
+nav a{
+    color: white;
+}
+
+.contenedor_titulo{
+    margin:  10%
+}
+
+.titulo{
+    font-size: 250%;
+}
+
+div h1{
+    margin: 0;
+}
+
+.contenedor_titulo > p{
+    margin: 0 1%;
+}
+
+.contenedor_seccion{
+    margin: 0 7%;
+
+}
+
+.cabecera{
+   align-items: center;
+   padding: 2% 0;
+}
+
+.cabecera>h3{
+    margin: 0;
+    padding: 0 5%;
+    font-size: 150%;
+}
+
+#titulo_historia{
+    background-color: rgba(242, 249, 251, 0.9);
+    color: #780404;
+}
+
+#titulo_jugadores{
+  background-color: #adad14;
+  color:black;
+}
+
+#titulo_torneos{
+  background-color: rgb(48, 48, 134);
+  color: rgb(252, 248, 214);
+}
+
+.contenido{
+    margin: 0 5%;
+    display: flex;
+}
+
+.contenedor_imagen{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedor_texto{
+    width: 60%;
+}
+
+.contenedor_imagen > img{
+    max-width: 70%;
+    height: 75%;
+    /* margin: 5%; */
+}
+
+.boton_desp{
+    background: none;
+    border: none;
+    padding: 0;
+    font:inherit;
+    cursor: pointer;
+    outline: inherit;
+    color:inherit;
+    display: none
+}
+
+.lista_opciones{
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    padding: 0;
+}
+
+.lista_opciones > li{
+    display: block;
+}
+
+.boton_desp:hover+ .lista_opciones{
+    display: block;
+}
+
+.boton_desp:focus + .lista_opciones{
+    display: block;
+}
+
+.lista_opciones li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.lista_opciones li a:hover{
+    background-color: rgb(6, 112, 27);
+    color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width:500px){
+  .contenido{
+    flex-direction: column;
+  }
+  .contenedor_texto{
+    width: 100%;
+  }
+  .contenedor_imagen{
+    width: 100%;
+  }
+
+  nav>ul>li>a{
+    display: none;
+  }
+
+  .boton_desp{
+    display: block;
+  }
+}
