@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos.css">
     <title>PaginaChida</title>
 </head>
 <body>
@@ -16,20 +16,30 @@
             <li><a href="#titulo_jugadores">Jugadores</a></li>
             <li><a href="#titulo_torneos">Torneos</a></li>
             <li><a href="#inicio">Inicio</a></li>
+            <li>
+                <button class="boton_desp">Secciones</button>
+                <ul class="lista_opciones">
+                    <li><a href="#titulo_historia">Historia</a></li>
+                    <li><a href="#titulo_jugadores">Jugadores</a></li>
+                    <li><a href="#titulo_torneos">Torneos</a></li>
+                    
+                </ul>
+            </li>
         </ul>
         </nav>
     </header>
     <main>
-        <div class="principal texto_general" id="inicio">
+        <div class="contenedor_titulo" id="inicio">
             <div class="titulo">
                 <h1>FUTBOL</h1>
-                <p>No solo un juego.</p>
             </div>
+            <p>No solo un juego.</p>
             <!-- <div class="titulo">
                 <img src="./images/ball.png" alt="", class="imagen">
             </div> -->
         </div>
-        <div class="seccion texto_general">
+
+        <div class="contenedor_seccion">
             <div class="cabecera" id="titulo_historia">
                 <h3>HISTORIA</h3>
             </div>
@@ -43,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="seccion texto_general">
+        <div class="contenedor_seccion">
             <div class="cabecera" id="titulo_jugadores">
                 <h3>JUGADORES</h3>
             </div>
@@ -57,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="seccion texto_general">
+        <div class="contenedor_seccion">
             <div class="cabecera" id="titulo_torneos">
                 <h3>COMPETENCIAS Y TORNEOS</h3>
             </div>
